@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind Babu - JARVIS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="jarvis-loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">
+                <span class="loading-text">INITIALIZING JARVIS INTERFACE</span>
+                <div class="loading-dots">
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JARVIS</span>
+                <div class="logo-pulse"></div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">ACHIEVEMENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-hologram">
+                <div class="hologram-lines"></div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text" data-text="ARAVIND BABU - DIGITAL UNIVERSE"></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="typing-text" data-text="Computer Science Student | Developer | Innovation Enthusiast" data-delay="2000"></span>
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('about')">
+                            <span>INITIALIZE SCAN</span>
+                            <i class="fas fa-rocket"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <span>ESTABLISH CONNECTION</span>
+                            <i class="fas fa-satellite-dish"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="arc-reactor">
+                    <div class="reactor-core"></div>
+                    <div class="reactor-ring"></div>
+                    <div class="reactor-ring-2"></div>
+                    <div class="reactor-particles"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PERSONAL PROFILE</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-glow"></div>
+                    <div class="about-info">
+                        <h3 class="about-name">Aravind Babu - Student Profile</h3>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-university"></i>
+                                <span>Amrita Vishwa Vidyapeetham</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Bachelor of Computer Applications (Honours)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-medal"></i>
+                                <span>CSI Treasurer</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-code"></i>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                        <p class="about-description">
+                            I am Aravind Babu, a passionate computer science student dedicated to pushing the boundaries of technology. 
+                            Currently pursuing BCA Honours at Amrita Vishwa Vidyapeetham Kochi Campus with a focus on innovative solutions and emerging technologies. 
+                            As Treasurer of Computer Society of India and NVIDIA Developer Member, I am committed to excellence in software development and community leadership.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ACHIEVEMENT RECORDS</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="card-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fab fa-nvidia"></i>
+                    </div>
+                    <h3 class="achievement-title">NVIDIA Developer</h3>
+                    <p class="achievement-description">
+                        Official member of the NVIDIA Developer Program, working with cutting-edge GPU technologies 
+                        and AI frameworks to build next-generation applications.
+                    </p>
+                    <div class="achievement-badge">VERIFIED</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="card-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="achievement-title">Olabs Hackathon</h3>
+                    <p class="achievement-description">
+                        Participated in the prestigious Olabs Hackathon, collaborating with talented developers 
+                        to create innovative solutions under time constraints.
+                    </p>
+                    <div class="achievement-badge">PARTICIPANT</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="card-glow"></div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="achievement-title">CSI Treasurer</h3>
+                    <p class="achievement-description">
+                        Serving as Treasurer for the Computer Society of India chapter, managing finances 
+                        and contributing to technical events and workshops.
+                    </p>
+                    <div class="achievement-badge">LEADERSHIP</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TECHNICAL SPECIFICATIONS</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="90">
+                        <div class="skill-info">
+                            <div class="skill-name">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-percentage">90%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="85">
+                        <div class="skill-info">
+                            <div class="skill-name">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-percentage">85%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="80">
+                        <div class="skill-info">
+                            <div class="skill-name">
+                                <i class="fas fa-code"></i>
+                                <span>C Programming</span>
+                            </div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="88">
+                        <div class="skill-info">
+                            <div class="skill-name">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-percentage">88%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="82">
+                        <div class="skill-info">
+                            <div class="skill-name">
+                                <i class="fas fa-database"></i>
+                                <span>Oracle</span>
+                            </div>
+                            <div class="skill-percentage">82%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="87">
+                        <div class="skill-info">
+                            <div class="skill-name">
+                                <i class="fab fa-linux"></i>
+                                <span>Linux</span>
+                            </div>
+                            <div class="skill-percentage">87%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="87"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="75">
+                        <div class="skill-info">
+                            <div class="skill-name">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-percentage">75%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PROJECT ARCHIVES</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="coming-soon-card">
+                    <div class="card-glow"></div>
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="coming-soon-title">PROJECTS COMING SOON</h3>
+                        <p class="coming-soon-description">
+                            Currently developing innovative projects that will showcase my technical expertise and problem-solving abilities. 
+                            Stay tuned for exciting developments in AI, web development, and database management.
+                        </p>
+                        <div class="coming-soon-status">
+                            <span class="status-text">STATUS: IN DEVELOPMENT</span>
+                            <div class="status-indicator">
+                                <div class="pulse-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-glow"></div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ESTABLISH COMMUNICATION</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info-centered">
+                    <div class="contact-card">
+                        <div class="card-glow"></div>
+                        <h3 class="contact-title">Initialize Connection</h3>
+                        <p class="contact-description">
+                            Ready to collaborate on innovative projects or discuss opportunities? 
+                            Connect with me through direct channels.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email Protocol</span>
+                                    <span class="contact-value">aravindachu536@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-text">
+                                    <span class="contact-label">Voice Channel</span>
+                                    <span class="contact-value">+91 8810970638</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-text">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Amrita Vishwa Vidyapeetham Kochi Campus</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Panther-25" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aravind-babu-8a99a3241" class="social-link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.hackerrank.com/profile/Tomarcus25" class="social-link" target="_blank">
+                                <i class="fab fa-hackerrank"></i>
+                            </a>
+                            <a href="https://www.instagram.com/its_aravind25_kl29/" class="social-link" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">JARVIS</span>
+                    <div class="logo-pulse"></div>
+                </div>
+                <p class="footer-text">
+                    &copy; 2025 JARVIS Portfolio. All systems operational.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
